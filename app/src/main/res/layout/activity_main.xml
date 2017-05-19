@@ -1,0 +1,132 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.khutso.singlescreenapp.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_results"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Results"
+        android:hint="The Results Will Be Displayed Here"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/edt_first_number"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:hint="Enter the first number here"
+        android:textColorHint="@color/colorAccent"
+        android:layout_margin="8dp"
+        />
+
+        <EditText
+            android:id="@+id/edt_second_number"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Enter the first number here"
+            android:textColorHint="@color/colorAccent"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_sum"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="SuM"
+            android:textAllCaps="true"
+            android:onClick="sum"/>
+
+        <Button
+            android:id="@+id/btn_subtract"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="minus"
+            android:textAllCaps="true"/>
+        <Button
+            android:id="@+id/btn_multiple"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="times"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/btn_divide"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="divide"
+            android:textAllCaps="true"
+            />
+
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/edt_history"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:text="History"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="clear "
+            android:layout_margin="8dp"
+            android:onClick="clear"
+            android:textAllCaps="true"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
+</LinearLayout>
