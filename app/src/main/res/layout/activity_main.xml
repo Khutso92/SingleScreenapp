@@ -11,47 +11,58 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
+
         android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/txt_results"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="Results"
-        android:hint="The Results Will Be Displayed Here"
-        android:textStyle="bold"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:background="@color/colorAccent"
-        android:layout_margin="8dp"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_results"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Results"
+                    android:hint="The Results Will Be Displayed Here"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorAccent"
+                    android:layout_margin="8dp"/>
 
     <EditText
         android:id="@+id/edt_first_number"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0"
+        android:layout_height="wrap_content"
+        android:layout_weight="0dp"
         android:hint="Enter the first number here"
         android:textColorHint="@color/colorAccent"
+        android:gravity="center"
         android:layout_margin="8dp"
         />
 
         <EditText
             android:id="@+id/edt_second_number"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:hint="Enter the first number here"
-            android:textColorHint="@color/colorAccent"
-            android:gravity="center"
+            android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            />
-
-
+            android:layout_weight="0"
+            android:gravity="center"
+            android:hint="Enter the first number here"
+            android:textColorHint="@color/colorAccent" />
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 
@@ -96,14 +107,7 @@ android:layout_margin="8dp"
             />
 
     </LinearLayout>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
+
 
         <TextView
             android:id="@+id/edt_history"
@@ -128,5 +132,4 @@ android:layout_margin="8dp"
     </LinearLayout>
 
 
-</ScrollView>
-</LinearLayout>
+
